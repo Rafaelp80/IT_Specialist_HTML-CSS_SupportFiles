@@ -6,3 +6,7 @@
 p {
     color: navy;
 }
+.sale {
+    font-weight: bold;
+    background-color:aqua;
+}
