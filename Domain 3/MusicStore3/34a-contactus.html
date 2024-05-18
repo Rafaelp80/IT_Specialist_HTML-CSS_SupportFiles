@@ -10,7 +10,8 @@
     We look forward to hearing from you!</p>
 
     <!-- insert form here-->
-    <form action="thankyou.html" method="post">
+    <form action="thankyou.html" method="post"
+        oninput="fn.value = firstname.value + ' ' + lastname.value">
         <label for="firstname">First Name</label>
         <input type="text" name="firstname" id="firstname"/> <br />
         <label for="lastname">Last Name</label>
