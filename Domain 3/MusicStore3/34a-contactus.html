@@ -13,6 +13,7 @@
     <form action="thankyou.html" method="post"
         oninput="fn.value = firstname.value + ' ' + lastname.value">
         <fieldset>
+        <legend>Personal</legend>
         <label for="firstname">First Name</label>
         <input type="text" name="firstname" id="firstname"/> <br />
         <label for="lastname">Last Name</label>
@@ -20,6 +21,8 @@
         <label for="email">Email Address</label>
         <input type="email" name="email" id="email"/> <br />
         </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
         <p>How did you hear about us?</p>
         <select name="found" id="found">
             <optgroup label="Media">
@@ -39,6 +42,7 @@
             <option value="piano"></option>
             <option value="drums"></option>
             <option value="bass"></option>
+            </fieldset>
         </datalist>
         <p>Add comments below</p>
         <textarea rows="6" cols="50" maxlength="255"></textarea>
