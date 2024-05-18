@@ -13,25 +13,41 @@
 
     <!-- insert form here-->
     <form action="thankyou.html" method="post">
+        <legend>Personal</legend>
         <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname" />
-        <br />
+        <input type="text" name="firstname" id="firstname"/> <br />
         <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname" />
-        <br />
+        <input type="text" name="lastname" id="lastname"/> <br />
         <label for="email">Email Address</label>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email"/> <br />
+        
+            <legend>Questions</legend>
         <p>How did you hear about us?</p>
         <select name="found" id="found">
+            <optgroup label="Media">
             <option value="TV">TV</option>
-            <option value="Web" selected>Radio</option>
+            <option value="Radio">Radio</option>
             <option value="Other">Other</option>
+            </optgroup>
+            <optgroup label="Wed">
+            <option value="Google">Google</option>
+            <option value="Bing">Bing</option>
+            
         </select>
+        <p>What instrument are you most interested in learning?</p>
+        <input list="instruments" name="instrument" />
+        <datalist id="instruments">
+            <option value="guitar"> </option>
+            <option value="piano"></option>
+            <option value="drums"></option>
+            <option value="bass"></option>
+            </fieldset>
+        </datalist>
         <p>Add comments below</p>
-        <textarea name="comments" rows="6" cols="50" maxlength="255"></textarea>
-        <button name="showimage" onclick="">Show image</button>
-        <input type="submit" name="submitform" value="Send it" /> <br />
+        <textarea rows="6" cols="50" maxlength="255"></textarea>
+        <button name="showwimage" onclick="">Show image</button>
+        <input type="submit" name="submitform" value="Send it" />
+        <output name="fn"></output>
     </form>
-
 </body>
 </html>
