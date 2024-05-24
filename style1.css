@@ -41,7 +41,22 @@ text-align:left;
 .dropDown:hover .dropDown-content{
  display:block;
 }
-
+.right{
+  position:absolute;
+  top: 8px;
+  right:5px;
+  width:72%;
+  font-size: 18px;
+  border:2px solid black;
+}
+.left
+position:absolute;
+top: 8px;
+width:23%;
+left:5px;
+font-size: 18px;
+border:2px solid black;
+}
 
 
 
