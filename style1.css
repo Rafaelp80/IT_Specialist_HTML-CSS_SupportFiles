@@ -52,9 +52,9 @@ text-align:left;
 .left{
 position:absolute;
 top: 8px;
-width:23%;
+width:18%;
 left:5px;
-font-size: 18px;
+font-size: 1px;
 border:2px solid black;
 }
 
